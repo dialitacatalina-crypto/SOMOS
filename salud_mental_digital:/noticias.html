@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Noticias – Salud mental & comunicación digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+  <!-- Logo -->
+  <a href="index.html" class="brand" aria-label="Ir al inicio">
+    <img src="imagenes/logo_somos.png" alt="SOMOS Bienestar Digital" class="logo">
+  </a>
+
+  <!-- Checkbox que controla el menú mobile -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+
+  <!-- Botón hamburguesa (solo mobile, se muestra por CSS) -->
+  <label for="menu-toggle" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Navegación -->
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="noticias.html" class="activo">Noticias</a></li>
+      <li><a href="reflexiones.html">Reflexiones</a></li>
+      <li><a href="entrevistas.html">Entrevistas</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- MAIN -->
+  <main id="noticias">
+  <h1>Noticias</h1>
+
+  <!-- Destacadas: carrusel horizontal con scroll-snap -->
+  <div class="destacados-azules">
+
+  <article class="bloque-azul azul-1">
+    <span class="categoria">Bienestar</span>
+    <h3 class="titulo-destacado">Hábitos digitales: cómo arrancar el día sin ansiedad</h3>
+    <p>Pequeñas prácticas para empezar mejor la mañana.</p>
+  </article>
+
+  <article class="bloque-azul azul-2">
+    <span class="categoria">Productividad</span>
+    <h3 class="titulo-destacado">Tiempo en pantalla: 3 ideas para enfocarte mejor</h3>
+    <p>Tips para estudiar o trabajar con claridad.</p>
+  </article>
+
+  <article class="bloque-azul azul-3">
+    <span class="categoria">Familias</span>
+    <h3 class="titulo-destacado">Niñez y pantallas: primera charla con chicos y chicas</h3>
+    <p>Guía para acordar límites saludables.</p>
+  </article>
+
+</div>
+
+
+<div class="intro-noticias">
+  <h3>¿Por qué reunir noticias sobre salud mental digital?</h3>
+  <p>
+    En la era digital, la información sobre salud mental suele mezclarse con consejos rápidos,
+    mitos y opiniones sin fundamento. Reunir noticias curadas en un solo espacio nos permite
+    filtrar ese ruido y acercar contenidos que estén en sintonía con el bienestar.
+  </p>
+  <p>
+    Estas noticias buscan abrir conversación, sumar contexto y mostrar que no estamos solos en
+    lo que sentimos frente a las pantallas. No reemplazan una consulta profesional, pero sí pueden
+    ser un primer paso para entender mejor qué nos pasa y cómo cuidarnos en el entorno digital.
+  </p>
+</div>
+
+
+
+  <!-- Filtros (decorativos) -->
+  <div class="chips">
+    <button class="chip">Todas</button>
+    <button class="chip">Bienestar</button>
+    <button class="chip">Productividad</button>
+    <button class="chip">Familias</button>
+    <button class="chip">Redes sociales</button>
+  </div>
+
+  <!-- Grilla de noticias -->
+  <section class="news-grid">
+    <article class="card news-card">
+      <img src="imagenes/noticias-01.jpg" alt="Lectura matutina y café" />
+      <div class="news-meta">
+        <span class="tag">Bienestar</span>
+        <h3>Mini detox digital de 10 minutos</h3>
+        <p>Un método corto para bajar el ruido antes de dormir.</p>
+      </div>
+    </article>
+
+    <article class="card news-card">
+      <img src="imagenes/noticias-02.jpg" alt="Estudio y organización" />
+      <div class="news-meta">
+        <span class="tag">Productividad</span>
+        <h3>Notificaciones: cómo ordenarlas sin perderte nada</h3>
+        <p>Prioridades, resúmenes y horarios silenciosos.</p>
+      </div>
+    </article>
+
+    <article class="card news-card">
+      <img src="imagenes/noticias-03.jpg" alt="Niñez y pantallas" />
+      <div class="news-meta">
+        <span class="tag">Familias</span>
+        <h3>Primera charla sobre redes con chicos y chicas</h3>
+        <p>Guía de conversación para acordar límites y cuidados.</p>
+      </div>
+    </article>
+  </section>
+</main>
+
+  <!-- FOOTER -->
+  <footer>
+  <img src="imagenes/logo_somos.jpg" alt="SOMOS Bienestar Digital" class="logo" />
+  <p>© 2025 – SOMOS Bienestar Digital · <a href="contacto.html">Ayuda</a></p>
+  <p><small>Este sitio no reemplaza la atención profesional en salud mental.</small></p>
+</footer>

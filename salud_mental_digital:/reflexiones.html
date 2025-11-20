@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reflexiones – Salud mental & comunicación digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+  <!-- Logo -->
+  <a href="index.html" class="brand" aria-label="Ir al inicio">
+    <img src="imagenes/logo_somos.png" alt="SOMOS Bienestar Digital" class="logo">
+  </a>
+
+  <!-- Checkbox que controla el menú mobile -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+
+  <!-- Botón hamburguesa (solo mobile, se muestra por CSS) -->
+  <label for="menu-toggle" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Navegación -->
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="noticias.html" class="activo">Noticias</a></li>
+      <li><a href="reflexiones.html">Reflexiones</a></li>
+      <li><a href="entrevistas.html">Entrevistas</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- MAIN -->
+  <main>
+  <section id="reflexiones">
+    <div class="section-header">
+      <h2>Reflexiones</h2>
+      <p>
+        Un espacio para pensar, escribir y compartir experiencias sobre la relación con lo digital y la salud mental.
+      </p>
+    </div>
+
+    <div class="reflexiones-grid">
+      <!-- Reflexión 1 -->
+      <article class="reflexion-card">
+        <img src="imagenes/reflexion1.jpg" alt="Persona relajada sentada en el sillón" />
+        <h3>La importancia de detenerse</h3>
+        <p class="texto-reflexivo">
+          A veces vivimos tan rápido que el cuerpo sigue, pero la mente se queda atrás.
+          Detenerse no es perder tiempo: es recuperarlo. Hacer una pausa, respirar hondo
+          y mirar alrededor nos ayuda a registrar qué nos pasa en serio y qué necesitamos.
+          Frenar también es una forma de cuidarnos.
+        </p>
+        <a href="#" class="leer-mas">Leer más</a>
+      </article>
+
+      <!-- Reflexión 2 -->
+      <article class="reflexion-card">
+        <img src="imagenes/reflexion2.jpg" alt="Persona escribiendo en un cuaderno" />
+        <h3>Escribir como terapia</h3>
+        <p class="texto-reflexivo">
+          Escribir es una manera silenciosa de ordenar lo que sentimos.
+          Cuando pasamos las ideas al papel, dejamos de cargarlas solo en la cabeza.
+          No hace falta que sea perfecto ni “literario”: alcanza con ser honesto.
+          A veces, una hoja en blanco puede ser el mejor lugar para soltarse y aliviar un poco el ruido.
+        </p>
+        <a href="#" class="leer-mas">Leer más</a>
+      </article>
+    </div>
+    <!-- Encuesta de reflexión -->
+    <section class="encuesta-reflexiones">
+      <h3>¿Cómo estás viviendo tu vínculo con lo digital?</h3>
+      <p>
+        Estas preguntas no tienen una respuesta correcta: son una invitación a mirarte
+        con honestidad y sin juicio. Elegí la opción que más se parezca a vos hoy.
+      </p>
+
+      <form class="form-encuesta">
+        <!-- Pregunta 1 -->
+        <div class="pregunta">
+          <h4>1. Cuando pensás en tu relación con las pantallas, ¿qué frase te representa mejor?</h4>
+          <label>
+            <input type="radio" name="relacion_pantallas" value="cuesta_desconectar">
+            Me cuesta desconectarme y siento que el celular me maneja a mí.
+          </label>
+          <label>
+            <input type="radio" name="relacion_pantallas" value="equilibrio_busqueda">
+            Estoy intentando encontrar un equilibrio, con días mejores y peores.
+          </label>
+          <label>
+            <input type="radio" name="relacion_pantallas" value="equilibrio_logrado">
+            Siento que tengo un vínculo bastante sano con la tecnología.
+          </label>
+          <label>
+            <input type="radio" name="relacion_pantallas" value="no_lo_pense">
+            Nunca me lo había preguntado hasta ahora.
+          </label>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="pregunta">
+          <h4>2. ¿En qué momento del día te pesa más el uso del celular?</h4>
+          <label>
+            <input type="radio" name="momento_peso" value="maniana">
+            A la mañana, apenas me despierto.
+          </label>
+          <label>
+            <input type="radio" name="momento_peso" value="estudio_trabajo">
+            Mientras estudio o trabajo, porque me distraigo fácil.
+          </label>
+          <label>
+            <input type="radio" name="momento_peso" value="noche">
+            A la noche, cuando sé que debería descansar.
+          </label>
+          <label>
+            <input type="radio" name="momento_peso" value="no_pesa">
+            No siento que me pese en ningún momento puntual.
+          </label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="pregunta">
+          <h4>3. Cuando te sentís saturadx de redes, ¿qué hacés con esa sensación?</h4>
+          <label>
+            <input type="radio" name="saturacion" value="seguir_scrolleando">
+            Sigo scrolleando aunque sé que no me hace bien.
+          </label>
+          <label>
+            <input type="radio" name="saturacion" value="cierro_apps">
+            Cierro las apps y busco hacer algo fuera de la pantalla.
+          </label>
+          <label>
+            <input type="radio" name="saturacion" value="hablo_con_alguien">
+            Le cuento a alguien cómo me siento.
+          </label>
+          <label>
+            <input type="radio" name="saturacion" value="no_se">
+            No sé qué hacer con esa incomodidad.
+          </label>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="pregunta">
+          <h4>4. ¿Qué te gustaría encontrar más en SOMOS Bienestar Digital?</h4>
+          <label>
+            <input type="radio" name="espera_sitio" value="historias_reales">
+            Historias reales de otras personas que atraviesan lo mismo.
+          </label>
+          <label>
+            <input type="radio" name="espera_sitio" value="guias_practicas">
+            Guías prácticas para ordenar el uso del celular y las redes.
+          </label>
+          <label>
+            <input type="radio" name="espera_sitio" value="espacios_escritura">
+            Espacios para escribir y compartir lo que siento.
+          </label>
+          <label>
+            <input type="radio" name="espera_sitio" value="recursos_familias">
+            Recursos para hablar de tecnología en familia.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-encuesta">Enviar respuestas</button>
+      </form>
+    </section>
+
+    <!-- Tarjeta para dejar una reflexión -->
+    <section class="compartir-reflexion">
+      <div class="reflexion-card-usuario">
+        <h3>¿Querés dejar tu propia reflexión?</h3>
+        <p>
+          Podés escribir cómo estás viviendo tu relación con lo digital, algo que
+          aprendiste o un recordatorio que te quieras dejar para más adelante.
+        </p>
+
+        <form class="form-reflexion">
+          <label for="reflexion_texto">Tu reflexión</label>
+          <textarea id="reflexion_texto" name="reflexion_texto" rows="5"
+            placeholder="Escribí acá lo que te estés preguntando, sintiendo o descubriendo..."></textarea>
+
+          <button type="submit" class="btn">Compartir reflexión</button>
+        </form>
+      </div>
+  </section>
+</main>
+
+
+
+  <!-- FOOTER -->
+<footer>
+  <img src="imagenes/logo_somos.jpg" alt="SOMOS Bienestar Digital" class="logo" />
+  <p>© 2025 – SOMOS Bienestar Digital · <a href="contacto.html">Ayuda</a></p>
+  <p><small>Este sitio no reemplaza la atención profesional en salud mental.</small></p>
+</footer>

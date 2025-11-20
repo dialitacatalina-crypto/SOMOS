@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio – Salud mental & comunicación digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Información, recursos y comunidad para un uso más sano de la tecnología." />
+  <!-- Enlaza tu hoja de estilos -->
+  <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER -->
+ <header class="site-header">
+  
+  <!-- Logo -->
+  <a href="index.html" class="brand">
+    <img src="imagenes/logo_somos.png" alt="SOMOS Bienestar Digital">
+  </a>
+
+  <!-- Checkbox que controla el menú mobile -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Botón hamburguesa (solo mobile) -->
+  <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="reflexiones.html">Reflexiones</a></li>
+      <li><a href="entrevistas.html">Entrevistas</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="recursos.html">Recursos</a></li>
+      <li><a href="comunidad.html">Comunidad</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+  <main>
+  <!-- SECCIÓN DE BIENVENIDA -->
+  <section id="bienvenida">
+    <h1>Bienvenidx a <span>SOMOS Bienestar Digital</span></h1>
+    <p>
+      Un espacio para pensar la tecnología desde el bienestar, compartir experiencias reales
+      y encontrar recursos que nos ayuden a sentirnos mejor en la era digital.
+    </p>
+
+    <p class="intro-secundaria">
+      Este espacio nace para ayudarte a hacer las paces con la tecnología.
+      Sabemos que a veces puede cansar, abrumar o desconectarnos de lo que realmente importa.
+      Por eso reunimos reflexiones, herramientas simples y experiencias reales para que puedas
+      construir una relación más sana con las pantallas. 
+      Ojalá encuentres acá un respiro y algo
+      que te haga bien.
+    </p>
+
+    <a href="reflexiones.html" class="btn">Explorá reflexiones</a>
+  </section>
+
+  <!-- VIDEO DEL INICIO (AUTOPLAY, SIN TEXTO) -->
+<section id="video-inicio" aria-label="Video de presentación de SOMOS">
+  <div class="video-wrapper">
+    <video
+      src="imagenes/video_inicio.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto">
+    </video>
+  </div>
+</section>
+
+<!-- SECCIÓN DESCUBRÍ SOMOS -->
+<section id="descubri-somos">
+  <h2>Descubrí todo lo que podés hacer acá</h2>
+  <p class="descubri-intro">
+    SOMOS no es solo un sitio informativo: es un espacio para leer, pensar, participar
+    y encontrar recursos que te acompañen en tu bienestar digital.
+  </p>
+
+  <div class="grid-cta">
+    <article class="cta-card">
+      <h3>¿Sabías que tenemos noticias sobre salud mental digital?</h3>
+      <p>
+        Enterate de las últimas novedades, investigaciones y debates sobre cómo
+        nos afecta el uso de la tecnología en el día a día.
+      </p>
+      <a href="noticias.html" class="btn-cta">Ir a noticias</a>
+    </article>
+
+    <article class="cta-card">
+      <h3>¿Necesitás frenar un poco el ruido?</h3>
+      <p>
+        En la sección de reflexiones vas a encontrar textos breves que invitan a
+        bajar un cambio y mirarte con más cuidado.
+      </p>
+      <a href="reflexiones.html" class="btn-cta">Ver reflexiones</a>
+    </article>
+
+    <article class="cta-card">
+      <h3>¿Querés herramientas prácticas para desconectar?</h3>
+      <p>
+        En recursos reunimos guías, ejercicios y tips simples para ordenar
+        notificaciones, tiempos de pantalla y hábitos digitales.
+      </p>
+      <a href="recursos.html" class="btn-cta">Ir a recursos</a>
+    </article>
+
+    <article class="cta-card">
+      <h3>¿Te gustaría sentir que no sos la única persona a la que le pasa?</h3>
+      <p>
+        En comunidad compartimos experiencias y propuestas para que puedas
+        sentirte acompañadx en lo que te pasa con las redes.
+      </p>
+      <a href="comunidad.html" class="btn-cta">Ir a comunidad</a>
+    </article>
+  </div>
+</section>
+
+  <!-- DESPUÉS PUEDE VENIR EL RESTO DEL INICIO (intro, claim, etc.) -->
+  <!--
+  <section id="intro">
+    ...
+  </section>
+  -->
+</main>
+
+  <!-- FOOTER -->
+ <footer>
+  <img src="imagenes/logo_somos.jpg" alt="SOMOS Bienestar Digital" class="logo" />
+  <p>© 2025 – SOMOS Bienestar Digital · <a href="contacto.html">Ayuda</a></p>
+  <p><small>Este sitio no reemplaza la atención profesional en salud mental.</small></p>
+</footer>
